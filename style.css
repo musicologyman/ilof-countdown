@@ -1,0 +1,28 @@
+body {
+  background-color: #008b8b;
+  color: #ffffff;
+}
+
+#main-content {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+#universal-time {
+  font-size: 1.25em;
+  margin-top: 1em;
+}
+
+#timeRightNow {
+  background-color: #000000;
+  color: #ffa500;
+  padding: 0 0.1em;
+  border: 2px solid yellow;
+}
