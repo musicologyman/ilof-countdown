@@ -27,31 +27,7 @@ function before1715(dt) {
 }
 
 function getNextShowDate(dt) {
-  let currentDay = getDayOfWeek(dt);
-  if (currentDay < 6) {
-    if (before1715(dt)) {
-      return dt.startOf("day");
-    } else {
-      // after 1715
-      if (currentDay >= 1 && currentDay < 5) {
-        return dt.startOf("day").plus({ days: 1 });
-      } else {
-        // if currentDay == 5
-        return dt.startOf("day").plus({ days: 3 });
-      }
-    }
-  } else {
-    switch (currentDay) {
-      case 6:
-        return dt.startOf("day").plus({ days: 2 });
-        break;
-      case 7:
-        return dt.startOf("day").plus({ days: 1 });
-        break;
-      default:
-        throw `Invalid currentDay: ${currentDay}`;
-    }
-  }
+   return DateTime.fromObject({year:2021,month:11,day:29,hour:17}, {zone: 'America/New_York'});
 }
 
 function getNextShowDateTime(currentDate) {
